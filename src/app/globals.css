@@ -1,26 +1,305 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 98%;
+    --foreground: 240 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 15%;
+
+    /* Blu navy desaturato - trasmette affidabilità e calma */
+    --primary: 215 25% 40%;
+    --primary-foreground: 0 0% 100%;
+    --primary-50: 215 25% 97%;
+    --primary-100: 215 25% 92%;
+    --primary-200: 215 25% 85%;
+    --primary-300: 215 25% 75%;
+    --primary-400: 215 25% 60%;
+    --primary-500: 215 25% 40%;
+    --primary-600: 215 30% 35%;
+    --primary-700: 215 35% 30%;
+    --primary-800: 215 40% 25%;
+    --primary-900: 215 45% 20%;
+    --primary-950: 215 50% 15%;
+
+    /* Verde salvia chiaro - per un tocco naturale e rilassante */
+    --secondary: 160 15% 85%;
+    --secondary-foreground: 215 25% 25%;
+    --secondary-50: 160 15% 97%;
+    --secondary-100: 160 15% 92%;
+    --secondary-200: 160 15% 85%;
+    --secondary-300: 160 15% 75%;
+    --secondary-400: 160 15% 65%;
+    --secondary-500: 160 15% 55%;
+    --secondary-600: 160 15% 45%;
+    --secondary-700: 160 20% 35%;
+    --secondary-800: 160 25% 25%;
+    --secondary-900: 160 30% 15%;
+    --secondary-950: 160 35% 10%;
+
+    --muted: 215 15% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 215 25% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 15% 90%;
+    --input: 215 15% 90%;
+    --ring: 215 25% 40%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 215 30% 10%;
+    --foreground: 215 15% 95%;
+
+    --card: 215 35% 12%;
+    --card-foreground: 215 15% 95%;
+
+    --popover: 215 35% 12%;
+    --popover-foreground: 215 15% 95%;
+
+    /* Blu navy più profondo per dark mode */
+    --primary: 215 25% 65%;
+    --primary-foreground: 215 35% 12%;
+    --primary-50: 215 25% 97%;
+    --primary-100: 215 25% 90%;
+    --primary-200: 215 25% 80%;
+    --primary-300: 215 25% 70%;
+    --primary-400: 215 25% 65%;
+    --primary-500: 215 25% 55%;
+    --primary-600: 215 25% 45%;
+    --primary-700: 215 30% 35%;
+    --primary-800: 215 35% 25%;
+    --primary-900: 215 40% 20%;
+    --primary-950: 215 45% 15%;
+
+    /* Verde salvia scuro per dark mode */
+    --secondary: 160 15% 25%;
+    --secondary-foreground: 215 15% 95%;
+    --secondary-50: 160 15% 95%;
+    --secondary-100: 160 15% 85%;
+    --secondary-200: 160 15% 75%;
+    --secondary-300: 160 15% 65%;
+    --secondary-400: 160 15% 55%;
+    --secondary-500: 160 15% 45%;
+    --secondary-600: 160 15% 35%;
+    --secondary-700: 160 15% 25%;
+    --secondary-800: 160 20% 20%;
+    --secondary-900: 160 25% 15%;
+    --secondary-950: 160 30% 10%;
+
+    --muted: 215 30% 15%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 215 25% 65%;
+    --accent-foreground: 215 35% 12%;
+
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 215 15% 95%;
+
+    --border: 215 30% 15%;
+    --input: 215 30% 15%;
+    --ring: 215 25% 65%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300 font-sans leading-relaxed;
+    background-image: radial-gradient(
+        circle at 100% 0%,
+        hsl(var(--primary) / 0.03),
+        transparent 25%
+      ),
+      radial-gradient(
+        circle at 0% 100%,
+        hsl(var(--secondary) / 0.05),
+        transparent 40%
+      );
+    background-attachment: fixed;
+  }
+
+  .light body {
+    background-image: radial-gradient(
+        circle at 100% 0%,
+        hsl(var(--primary) / 0.02),
+        transparent 25%
+      ),
+      radial-gradient(
+        circle at 0% 100%,
+        hsl(var(--secondary) / 0.04),
+        transparent 40%
+      ),
+      linear-gradient(
+        to bottom right,
+        hsl(var(--background) / 1),
+        hsl(215 25% 96% / 1)
+      );
+  }
+
+  .dark body {
+    background-image: radial-gradient(
+        circle at 100% 0%,
+        hsl(var(--primary) / 0.1),
+        transparent 35%
+      ),
+      radial-gradient(
+        circle at 0% 100%,
+        hsl(var(--secondary) / 0.1),
+        transparent 40%
+      );
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium tracking-tight text-foreground/90;
+  }
+
+  h1 {
+    @apply text-4xl leading-tight;
+  }
+
+  h2 {
+    @apply text-3xl leading-tight;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-card/80 text-card-foreground rounded-lg p-6 backdrop-blur-[2px] border border-border/80 shadow-soft transition-all duration-300 hover:shadow-soft-lg hover:bg-card hover:border-border;
+  }
+
+  .glass-card {
+    @apply rounded-lg p-6 border border-white/10 backdrop-filter backdrop-blur-sm bg-white/5 dark:bg-black/10 shadow-soft shadow-black/5 transition-all duration-300 hover:shadow-soft-lg hover:border-white/20 dark:hover:border-white/20;
+  }
+
+  .button {
+    @apply px-4 py-2 rounded-lg bg-primary/90 text-primary-foreground hover:bg-primary transition-all font-medium focus:outline-none focus:ring-2 focus:ring-ring/30 focus:ring-offset-1 focus:ring-offset-background shadow-soft hover:shadow-soft-lg active:scale-[0.98];
+  }
+
+  .button-secondary {
+    @apply px-4 py-2 rounded-lg bg-secondary/90 text-secondary-foreground hover:bg-secondary transition-all font-medium focus:outline-none focus:ring-2 focus:ring-ring/30 focus:ring-offset-1 focus:ring-offset-background shadow-soft hover:shadow-soft-lg active:scale-[0.98];
+  }
+
+  .button-outline {
+    @apply px-4 py-2 rounded-lg bg-transparent border border-input text-foreground hover:bg-secondary/10 transition-all font-medium focus:outline-none focus:ring-2 focus:ring-ring/30 focus:ring-offset-1 focus:ring-offset-background shadow-soft active:scale-[0.98];
+  }
+
+  .input {
+    @apply bg-background/80 border border-input rounded-lg px-4 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-ring/30 focus:ring-offset-1 focus:ring-offset-background placeholder:text-muted-foreground/70 shadow-soft hover:bg-background transition-colors;
+  }
+
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring/30 focus:ring-offset-1;
+  }
+
+  .badge-primary {
+    @apply bg-primary/10 text-primary-600 dark:text-primary-400 hover:bg-primary/20;
+  }
+
+  .badge-secondary {
+    @apply bg-secondary/80 text-secondary-foreground hover:bg-secondary;
+  }
+
+  .navbar-link {
+    @apply relative px-3 py-2 rounded-lg transition-all duration-200 text-muted-foreground hover:text-foreground hover:bg-primary/5 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] after:rounded-full after:bg-primary/80 after:transition-all after:duration-200 hover:after:w-4/5;
+  }
+
+  .navbar-link-active {
+    @apply text-primary bg-primary/5 relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-4/5 after:h-[2px] after:rounded-full after:bg-primary/80;
+  }
+
+  /* Shimmer effect for subtle animations */
+  .shimmer {
+    @apply relative overflow-hidden bg-gradient-to-r from-transparent via-white/10 to-transparent bg-[length:200%_100%] animate-shimmer;
+  }
+
+  /* Light mode specific style refinements */
+  .light .card {
+    @apply hover:bg-white/90;
+  }
+
+  .light .navbar-link:hover {
+    @apply bg-primary/5;
+  }
+
+  /* Dark mode specific refinements */
+  .dark .button-outline:hover {
+    @apply bg-primary/10 border-primary/20;
+  }
+
+  /* Animazioni e transizioni */
+  .fade-in {
+    @apply animate-[fadeIn_0.5s_ease-out];
+  }
+
+  .scale-in {
+    @apply animate-[scaleIn_0.3s_cubic-bezier(0.2,0.8,0.2,1)];
+  }
+
+  .slide-up {
+    @apply animate-[slideUp_0.4s_cubic-bezier(0.2,0.8,0.2,1)];
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.97);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

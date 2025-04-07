@@ -1,0 +1,105 @@
+{
+  "app": {
+    "title": "Myndiary",
+    "description": "Your Personal Journal"
+  },
+  "nav": {
+    "home": "Home",
+    "diary": "Diary",
+    "calendar": "Calendar",
+    "whatsapp": "WhatsApp",
+    "newEntry": "New Entry",
+    "signOut": "Sign Out",
+    "settings": "Settings"
+  },
+  "home": {
+    "welcome": "Welcome to Myndiary",
+    "description": "Capture your thoughts, memories, and ideas",
+    "diary": "View your diary",
+    "newEntry": "Create new entry",
+    "calendar": "View calendar",
+    "whatsapp": "Connect WhatsApp",
+    "connectWhatsapp": "Connect your diary with WhatsApp"
+  },
+  "diary": {
+    "title": "Your Diary",
+    "emptyState": "Your diary is empty. Create your first entry!",
+    "filterByDate": "Filter by date",
+    "searchPlaceholder": "Search entries...",
+    "loadMore": "Load more",
+    "noResults": "No entries found",
+    "errorLoading": "Error loading entries"
+  },
+  "entry": {
+    "new": "New Entry",
+    "edit": "Edit Entry",
+    "title": "Title",
+    "content": "Content",
+    "date": "Date",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirmDelete": "Are you sure you want to delete this entry?",
+    "addImage": "Add Image",
+    "addAudio": "Add Audio",
+    "addVideo": "Add Video",
+    "back": "Back",
+    "errorSaving": "Error saving entry",
+    "errorDeleting": "Error deleting entry",
+    "successSaving": "Entry saved successfully",
+    "successDeleting": "Entry deleted successfully"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "createAccount": "Create an account",
+    "signInPrompt": "Sign in to your account",
+    "errorSignIn": "Error signing in",
+    "errorSignUp": "Error signing up",
+    "successSignIn": "Signed in successfully",
+    "successSignUp": "Signed up successfully"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "notification": "Notifications",
+    "privacy": "Privacy",
+    "selectLanguage": "Select your preferred language:",
+    "changeLanguage": "Change the application language",
+    "whatsapp": {
+      "title": "WhatsApp Settings",
+      "description": "Connect your diary with WhatsApp",
+      "status": "Connection Status",
+      "connected": "Connected",
+      "disconnected": "Disconnected",
+      "phoneNumber": "Phone Number",
+      "connect": "Connect",
+      "disconnect": "Disconnect",
+      "errorConnecting": "Error connecting to WhatsApp",
+      "successConnecting": "Successfully connected to WhatsApp",
+      "confirmDisconnect": "Are you sure you want to disconnect WhatsApp?"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "success": "Success!",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "yes": "Yes",
+    "no": "No"
+  }
+}

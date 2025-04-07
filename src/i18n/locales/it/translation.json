@@ -1,0 +1,105 @@
+{
+  "app": {
+    "title": "Myndiary",
+    "description": "Il Tuo Diario Personale"
+  },
+  "nav": {
+    "home": "Home",
+    "diary": "Diario",
+    "calendar": "Calendario",
+    "whatsapp": "WhatsApp",
+    "newEntry": "Nuova Nota",
+    "signOut": "Esci",
+    "settings": "Impostazioni"
+  },
+  "home": {
+    "welcome": "Benvenuto in Myndiary",
+    "description": "Cattura i tuoi pensieri, ricordi e idee",
+    "diary": "Visualizza il tuo diario",
+    "newEntry": "Crea nuova nota",
+    "calendar": "Visualizza calendario",
+    "whatsapp": "Connetti WhatsApp",
+    "connectWhatsapp": "Connetti il tuo diario con WhatsApp"
+  },
+  "diary": {
+    "title": "Il Tuo Diario",
+    "emptyState": "Il tuo diario è vuoto. Crea la tua prima nota!",
+    "filterByDate": "Filtra per data",
+    "searchPlaceholder": "Cerca note...",
+    "loadMore": "Carica altro",
+    "noResults": "Nessuna nota trovata",
+    "errorLoading": "Errore nel caricamento delle note"
+  },
+  "entry": {
+    "new": "Nuova Nota",
+    "edit": "Modifica Nota",
+    "title": "Titolo",
+    "content": "Contenuto",
+    "date": "Data",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "confirmDelete": "Sei sicuro di voler eliminare questa nota?",
+    "addImage": "Aggiungi Immagine",
+    "addAudio": "Aggiungi Audio",
+    "addVideo": "Aggiungi Video",
+    "back": "Indietro",
+    "errorSaving": "Errore nel salvare la nota",
+    "errorDeleting": "Errore nell'eliminare la nota",
+    "successSaving": "Nota salvata con successo",
+    "successDeleting": "Nota eliminata con successo"
+  },
+  "auth": {
+    "signIn": "Accedi",
+    "signUp": "Registrati",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Password dimenticata?",
+    "noAccount": "Non hai un account?",
+    "hasAccount": "Hai già un account?",
+    "createAccount": "Crea un account",
+    "signInPrompt": "Accedi al tuo account",
+    "errorSignIn": "Errore durante l'accesso",
+    "errorSignUp": "Errore durante la registrazione",
+    "successSignIn": "Accesso effettuato con successo",
+    "successSignUp": "Registrazione effettuata con successo"
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "language": "Lingua",
+    "theme": "Tema",
+    "notification": "Notifiche",
+    "privacy": "Privacy",
+    "selectLanguage": "Seleziona la tua lingua preferita:",
+    "changeLanguage": "Cambia la lingua dell'applicazione",
+    "whatsapp": {
+      "title": "Impostazioni WhatsApp",
+      "description": "Connetti il tuo diario con WhatsApp",
+      "status": "Stato Connessione",
+      "connected": "Connesso",
+      "disconnected": "Disconnesso",
+      "phoneNumber": "Numero di Telefono",
+      "connect": "Connetti",
+      "disconnect": "Disconnetti",
+      "errorConnecting": "Errore durante la connessione",
+      "successConnecting": "Connessione effettuata con successo",
+      "confirmDisconnect": "Sei sicuro di voler disconnettere WhatsApp?"
+    }
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore",
+    "retry": "Riprova",
+    "success": "Successo!",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "view": "Visualizza",
+    "close": "Chiudi",
+    "confirm": "Conferma",
+    "back": "Indietro",
+    "yes": "Sì",
+    "no": "No"
+  }
+}

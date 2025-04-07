@@ -1,0 +1,105 @@
+{
+  "app": {
+    "title": "Myndiary",
+    "description": "Votre Journal Personnel"
+  },
+  "nav": {
+    "home": "Accueil",
+    "diary": "Journal",
+    "calendar": "Calendrier",
+    "whatsapp": "WhatsApp",
+    "newEntry": "Nouvelle Note",
+    "signOut": "Déconnexion",
+    "settings": "Paramètres"
+  },
+  "home": {
+    "welcome": "Bienvenue sur Myndiary",
+    "description": "Capturez vos pensées, souvenirs et idées",
+    "diary": "Voir votre journal",
+    "newEntry": "Créer une nouvelle note",
+    "calendar": "Voir le calendrier",
+    "whatsapp": "Connecter WhatsApp",
+    "connectWhatsapp": "Connectez votre journal avec WhatsApp"
+  },
+  "diary": {
+    "title": "Votre Journal",
+    "emptyState": "Votre journal est vide. Créez votre première note !",
+    "filterByDate": "Filtrer par date",
+    "searchPlaceholder": "Rechercher des notes...",
+    "loadMore": "Charger plus",
+    "noResults": "Aucune note trouvée",
+    "errorLoading": "Erreur lors du chargement des notes"
+  },
+  "entry": {
+    "new": "Nouvelle Note",
+    "edit": "Modifier la Note",
+    "title": "Titre",
+    "content": "Contenu",
+    "date": "Date",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "confirmDelete": "Êtes-vous sûr de vouloir supprimer cette note ?",
+    "addImage": "Ajouter une Image",
+    "addAudio": "Ajouter un Audio",
+    "addVideo": "Ajouter une Vidéo",
+    "back": "Retour",
+    "errorSaving": "Erreur lors de l'enregistrement de la note",
+    "errorDeleting": "Erreur lors de la suppression de la note",
+    "successSaving": "Note enregistrée avec succès",
+    "successDeleting": "Note supprimée avec succès"
+  },
+  "auth": {
+    "signIn": "Se Connecter",
+    "signUp": "S'inscrire",
+    "email": "Email",
+    "password": "Mot de passe",
+    "forgotPassword": "Mot de passe oublié ?",
+    "noAccount": "Vous n'avez pas de compte ?",
+    "hasAccount": "Vous avez déjà un compte ?",
+    "createAccount": "Créer un compte",
+    "signInPrompt": "Connectez-vous à votre compte",
+    "errorSignIn": "Erreur lors de la connexion",
+    "errorSignUp": "Erreur lors de l'inscription",
+    "successSignIn": "Connexion réussie",
+    "successSignUp": "Inscription réussie"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "language": "Langue",
+    "theme": "Thème",
+    "notification": "Notifications",
+    "privacy": "Confidentialité",
+    "selectLanguage": "Sélectionnez votre langue préférée :",
+    "changeLanguage": "Changer la langue de l'application",
+    "whatsapp": {
+      "title": "Paramètres WhatsApp",
+      "description": "Connectez votre journal avec WhatsApp",
+      "status": "État de la Connexion",
+      "connected": "Connecté",
+      "disconnected": "Déconnecté",
+      "phoneNumber": "Numéro de Téléphone",
+      "connect": "Connecter",
+      "disconnect": "Déconnecter",
+      "errorConnecting": "Erreur lors de la connexion à WhatsApp",
+      "successConnecting": "Connexion à WhatsApp réussie",
+      "confirmDisconnect": "Êtes-vous sûr de vouloir déconnecter WhatsApp ?"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "retry": "Réessayer",
+    "success": "Succès !",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "close": "Fermer",
+    "confirm": "Confirmer",
+    "back": "Retour",
+    "yes": "Oui",
+    "no": "Non"
+  }
+}
